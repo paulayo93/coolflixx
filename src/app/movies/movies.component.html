@@ -1,0 +1,38 @@
+<section class="container mt-5 ml-5">
+        <form>
+                <div class="row justify-content-md-start align-items-sm-baseline">
+                <div class="">
+                <a class="search-icon-box"><fa-icon class="icon-color"  [icon]="['fas', 'search']" class="text-white"></fa-icon> </a>
+                <input type="text" class="search-input"   placeholder="Search Movies">
+        </div>
+                <div class="ml-3 align-self-center">
+                <button class="w-10 h-100" ><fa-icon class="search-icon-button ml-1 mr-2" [icon]="['fas', 'search']"></fa-icon><span>Search</span></button>
+                </div>
+        </div>
+        </form>
+</section>
+
+        
+
+
+<section  class="container mt-5">
+                <div class="row justify-content-sm-end">
+                        <div *ngFor="let movie of  movies" class="col-sm-3 col-6  mb-3">
+                                <div  class="card hvr-grow-shadow">
+                                        <div  class="card-body">
+                                                <img [src]="movie.Poster" class="card-img-top" alt="">
+                                                <aside class="">
+                                                        <h3 class="card-title mat-body-strong">{{movie.Title}}</h3>
+                                                        <span class="mat-caption">{{movie.Released}}</span>
+                                                        <div class="d-flex">
+                                                                <a [routerLink]="['/movies', movie.Title]"><span class="mat-body text-dark">view</span></a>
+                                                        </div>
+                                                </aside>
+                                        </div>
+
+                                </div>
+                        </div>
+                        
+                </div>
+        </section>
+<router-outlet></router-outlet> 

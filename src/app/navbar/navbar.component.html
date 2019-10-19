@@ -1,0 +1,21 @@
+
+<header>
+  <nav class="navbar navbar-expand-lg py-1 navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 mr-5">
+      <a id="nav-title" class="navbar-brand display-1" [routerLink]="['/movies']"><strong>{{title}}</strong></a>
+        </div>
+        <div class="col-md-3">
+            <a class="navbar-brand text-white" href="#"><strong>MOVIES</strong></a>
+        </div>
+        <div class="col-md-3">
+            <a class="navbar-brand text-white" href="#"><strong>FAVORITE</strong></a>
+        </div>
+
+      </div>
+      </div>
+  </nav>
+</header>
+
+<router-outlet></router-outlet>
