@@ -1,24 +1,21 @@
 <section class="container">
-    <div class="row">
+  <div class="row">
     <aside>
-        <h1 class="text-danger m-5">{{ movie?.Title }}</h1>
-        <p>{{ movie?.Plot}}</p>
-        <span>{{ movie?.Released }}</span>
-        <span>{{ movie?.Rated }}</span>
-        <span>{{ movie?.Genre }}</span>
-        <span>{{movie?.Language }}</span>
+      <h1 class="text-danger m-5">{{ movie?.Title }}</h1>
+      <p class="mat-body text-white">{{ movie?.Plot }}</p>
+      <span>{{ movie?.Released }}</span>
+      <span>{{ movie?.Rated }}</span>
+      <span>{{ movie?.Genre }}</span>
+      <span>{{ movie?.Language }}</span>
     </aside>
     <aside>
-        <img [src]="movie?.Poster" alt="movie image">
+      <img [src]="movie?.Poster" alt="movie image" />
     </aside>
     <div>
-        <button class="btn "
-        (click)='onBack()'
-        style='width: 80px'>Back</button>
-        <!-- <fa-icon [icon]="['fas', 'back']'"></fa-icon> -->
+      <button class="btn " (click)="onBack()" style="width: 80px">Back</button>
+      <!-- <fa-icon [icon]="['fas', 'back']'"></fa-icon> -->
     </div>
-    </div>
-
+  </div>
 </section>
 
-<router-outlet></router-outlet>
+
