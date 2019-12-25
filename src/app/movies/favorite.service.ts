@@ -12,16 +12,16 @@ export class FavoriteService {
   constructor(private httpClient: HttpClient,
               private storage: SessionStorageService) { }
 
-  addFavorite(title: string): Observable<IMovies[]>{
+  // addFavorite(title): void{
 
-    return this.storage.store('favorite-movies', title);
-  };
+  //   return this.storage.store('favorite-movies', title);
+  // };
 
-  getFavorite(title: string): Observable<IMovies[]>{
-    return this.storage.retrieve(title);
-  }
+  // getFavorite(title): Observable<IMovies[]>{
+  //   return this.storage.retrieve(title);
+  // }
 
-  removeFavorite(title: string): void {
-    this.storage.clear(title);
-  }
+  // removeFavorite(title: string): void {
+  //   this.storage.clear(title);
+  // }
 }
