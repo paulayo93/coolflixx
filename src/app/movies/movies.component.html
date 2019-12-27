@@ -41,7 +41,7 @@
             <h3 class="card-title mat-body-strong">{{ movie.Title }}</h3>
             <span class="mat-caption">{{ movie.Released }}</span>
             <div class="d-flex">
-              <a [routerLink]="['/movies', movie.id]"
+              <a [routerLink]="['/movies',  movie.Title]"
                 ><span class="mat-body text-dark">view</span></a
               >
             </div>

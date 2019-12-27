@@ -22,15 +22,17 @@ export class MoviesDetailComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.movie = this.moviesService.getById
-        (+this.route.snapshot.params['id']);
-    // const id = this.route.snapshot.paramMap.get('id');
-    // if (isNaN(+id)) {
-    //   const message = `Product id was not a number: ${id}`;
-    //   console.error(message);
-    //   return;
-    // }
-    // this.getMovie(+id);
+    // this.movie = this.moviesService.getById
+    //     (+this.route.snapshot.params['id']);
+
+    // const id = this.moviesService.getMovie
+    // (this.route.snapshot.paramMap['Title'])
+
+    this.route.data.subscribe(data => {
+
+      this.getMovie(data);
+    })
+
   }
 
   getMovie(title) {
