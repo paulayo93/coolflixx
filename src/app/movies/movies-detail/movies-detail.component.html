@@ -1,7 +1,7 @@
 <div class="position-relative mt-3">
   <section *ngIf="movie" class="container">
     <div class="row">
-      <div class="col-md-5">
+      <div class="col-md-5 align-items-center">
         <aside class="mr-auto">
           <h1 class="text-white">{{ movie?.Title }}</h1>
           <p class="mat-body text-white">{{ movie?.Plot }}</p>
@@ -31,8 +31,8 @@
         </aside>
 
       </div>
-      <aside class="ml-3">
-        <img [src]="movie?.Poster" alt="movie image" />
+      <aside class="px-5">
+        <img class="img-fluid" [src]="movie?.Poster" alt="movie image" />
       </aside>
     </div>
   </section>

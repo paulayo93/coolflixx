@@ -29,3 +29,14 @@ path.search-icon-box{
 
 
 }
+input[type='text']::placeholder, input[type='text']{
+  text-align: center;
+}
+@media (max-width: 526px) {
+  .search-input {
+    width: 200px;
+    height: 40px;
+    line-height: 30px;
+  }
+
+}

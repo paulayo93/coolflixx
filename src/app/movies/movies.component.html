@@ -1,7 +1,7 @@
 <section class="container mt-5 ml-5">
   <form #searchForm=ngForm ngSubmit="performFilter(moviesFilter)">
-    <div class="row justify-content-md-start align-items-sm-baseline">
-      <div>
+    <div class="row ">
+      <div class="col-4">
         <a class="search-icon-box">
           <fa-icon
             class="icon-color"
@@ -16,16 +16,16 @@
         type="text"
         class="search-input" placeholder="Search Movies" />
       </div>
-      <div class="ml-3 align-self-center">
+      <!-- <div class="ml-3 align-self-center">
         <button type='submit' class="w-10 h-100">
           <fa-icon
             [icon]="['fas', 'search']"
-            [classes]="['search-icon-button ml-1 mr-2']"
+            [classes]="['search-icon-button']"
           >
           </fa-icon
           ><span>Search</span>
-        </button>
-      </div>
+        </button> -->
+      <!-- </div> -->
     </div>
   </form>
 </section>
