@@ -1,4 +1,5 @@
-[
+
+const movies = [
   {
     "Title": "Baahubali: The Beginning",
     "id": 1,
@@ -15,28 +16,10 @@
     "Country": "India",
     "Awards": "22 wins & 12 nominations.",
     "Poster": "https://m.media-amazon.com/images/M/MV5BYWVlMjVhZWYtNWViNC00ODFkLTk1MmItYjU1MDY5ZDdhMTU3XkEyXkFqcGdeQXVyODIwMDI1NjM@.jpg",
-    "Ratings": [
-      {
-        "Source": "Internet Movie Database",
-        "Value": "8.1/10"
-      },
-      {
-        "Source": "Rotten Tomatoes",
-        "Value": "87%"
-      }
-    ],
-    "Metascore": "N/A",
-    "imdbRating": "8.1",
-    "imdbVotes": "94,499",
-    "imdbID": "tt2631186",
-    "Type": "movie",
-    "DVD": "N/A",
-    "BoxOffice": "N/A",
-    "Production": "Arka Media Works",
-    "Website": "http://baahubali.com/",
-    "Response": "True"
+
   },
   {
+    "id": 2,
     "Title": "Girls Trip",
     "Year": "2017",
     "Rated": "R",
@@ -51,32 +34,10 @@
     "Country": "USA, Canada",
     "Awards": "10 wins & 32 nominations.",
     "Poster": "https://m.media-amazon.com/images/M/MV5BMjMwNTEzODUwMV5BMl5BanBnXkFtZTgwNjE5NjA5MjI@.jpg",
-    "Ratings": [
-      {
-        "Source": "Internet Movie Database",
-        "Value": "6.2/10"
-      },
-      {
-        "Source": "Rotten Tomatoes",
-        "Value": "91%"
-      },
-      {
-        "Source": "Metacritic",
-        "Value": "71/100"
-      }
-    ],
-    "Metascore": "71",
-    "imdbRating": "6.2",
-    "imdbVotes": "30,274",
-    "imdbID": "tt3564472",
-    "Type": "movie",
-    "DVD": "17 Oct 2017",
-    "BoxOffice": "$115,088,305",
-    "Production": "Universal Pictures",
-    "Website": "http://www.girlstripmovie.com/",
-    "Response": "True"
+
   },
   {
+    "id": 3,
     "Title": "The Boss Baby",
     "Year": "2017",
     "Rated": "PG",
@@ -91,32 +52,10 @@
     "Country": "USA",
     "Awards": "Nominated for 1 Oscar. Another 1 win & 19 nominations.",
     "Poster": "https://m.media-amazon.com/images/M/MV5BMTg5MzUxNzgxNV5BMl5BanBnXkFtZTgwMTM2NzQ3MjI@.jpg",
-    "Ratings": [
-      {
-        "Source": "Internet Movie Database",
-        "Value": "6.3/10"
-      },
-      {
-        "Source": "Rotten Tomatoes",
-        "Value": "52%"
-      },
-      {
-        "Source": "Metacritic",
-        "Value": "50/100"
-      }
-    ],
-    "Metascore": "50",
-    "imdbRating": "6.3",
-    "imdbVotes": "96,846",
-    "imdbID": "tt3874544",
-    "Type": "movie",
-    "DVD": "25 Jul 2017",
-    "BoxOffice": "$174,996,080",
-    "Production": "DreamWorks Animation",
-    "Website": "N/A",
-    "Response": "True"
+
   },
   {
+    "id": 4,
     "Title": "Game Night",
     "Year": "2018",
     "Rated": "R",
@@ -131,32 +70,10 @@
     "Country": "USA",
     "Awards": "N/A",
     "Poster": "https://m.media-amazon.com/images/M/MV5BMjI3ODkzNDk5MF5BMl5BanBnXkFtZTgwNTEyNjY2NDM@.jpg",
-    "Ratings": [
-      {
-        "Source": "Internet Movie Database",
-        "Value": "6.9/10"
-      },
-      {
-        "Source": "Rotten Tomatoes",
-        "Value": "85%"
-      },
-      {
-        "Source": "Metacritic",
-        "Value": "66/100"
-      }
-    ],
-    "Metascore": "66",
-    "imdbRating": "6.9",
-    "imdbVotes": "171,243",
-    "imdbID": "tt2704998",
-    "Type": "movie",
-    "DVD": "22 May 2018",
-    "BoxOffice": "$33,537,766",
-    "Production": "New Line Cinema",
-    "Website": "http://www.gamenight.movie/",
-    "Response": "True"
+
   },
   {
+    "id": 5,
     "Title": "Blockers",
     "Year": "2018",
     "Rated": "R",
@@ -171,32 +88,10 @@
     "Country": "USA",
     "Awards": "1 nomination.",
     "Poster": "https://m.media-amazon.com/images/M/MV5BMjE0ODIzNjkzMl5BMl5BanBnXkFtZTgwODQ3MzU4NDM@.jpg",
-    "Ratings": [
-      {
-        "Source": "Internet Movie Database",
-        "Value": "6.2/10"
-      },
-      {
-        "Source": "Rotten Tomatoes",
-        "Value": "83%"
-      },
-      {
-        "Source": "Metacritic",
-        "Value": "69/100"
-      }
-    ],
-    "Metascore": "69",
-    "imdbRating": "6.2",
-    "imdbVotes": "60,263",
-    "imdbID": "tt2531344",
-    "Type": "movie",
-    "DVD": "19 Jun 2018",
-    "BoxOffice": "N/A",
-    "Production": "Universal Pictures",
-    "Website": "N/A",
-    "Response": "True"
+
   },
   {
+    "id": 6,
     "Title": "Deadpool",
     "Year": "2016",
     "Rated": "R",
@@ -211,32 +106,10 @@
     "Country": "USA",
     "Awards": "Nominated for 2 Golden Globes. Another 27 wins & 73 nominations.",
     "Poster": "https://m.media-amazon.com/images/M/MV5BYzE5MjY1ZDgtMTkyNC00MTMyLThhMjAtZGI5OTE1NzFlZGJjXkEyXkFqcGdeQXVyNjU0OTQ0OTY@.jpg",
-    "Ratings": [
-      {
-        "Source": "Internet Movie Database",
-        "Value": "8.0/10"
-      },
-      {
-        "Source": "Rotten Tomatoes",
-        "Value": "84%"
-      },
-      {
-        "Source": "Metacritic",
-        "Value": "65/100"
-      }
-    ],
-    "Metascore": "65",
-    "imdbRating": "8.0",
-    "imdbVotes": "839,040",
-    "imdbID": "tt1431045",
-    "Type": "movie",
-    "DVD": "10 May 2016",
-    "BoxOffice": "$328,674,489",
-    "Production": "20th Century Fox",
-    "Website": "N/A",
-    "Response": "True"
+
   },
   {
+    "id": 7,
     "Title": "Life of the Party",
     "Year": "2018",
     "Rated": "PG-13",
@@ -251,32 +124,10 @@
     "Country": "USA",
     "Awards": "N/A",
     "Poster": "https://m.media-amazon.com/images/M/MV5BMTkzOTk0MjYwM15BMl5BanBnXkFtZTgwNTE5ODQxNTM@.jpg",
-    "Ratings": [
-      {
-        "Source": "Internet Movie Database",
-        "Value": "5.6/10"
-      },
-      {
-        "Source": "Rotten Tomatoes",
-        "Value": "38%"
-      },
-      {
-        "Source": "Metacritic",
-        "Value": "46/100"
-      }
-    ],
-    "Metascore": "46",
-    "imdbRating": "5.6",
-    "imdbVotes": "27,603",
-    "imdbID": "tt5619332",
-    "Type": "movie",
-    "DVD": "07 Aug 2018",
-    "BoxOffice": "N/A",
-    "Production": "New Line Cinema",
-    "Website": "https://www.facebook.com/LifeOfThePartyMovie/",
-    "Response": "True"
+
   },
   {
+    "id": 8,
     "Title": "Crazy Rich Asians",
     "Year": "2018",
     "Rated": "PG-13",
@@ -317,6 +168,7 @@
     "Response": "True"
   },
   {
+    "id": 9,
     "Title": "Dirty Grandpa",
     "Year": "2016",
     "Rated": "R",
@@ -357,6 +209,7 @@
     "Response": "True"
   },
   {
+    "id": 10,
     "Title": "Bad Moms",
     "Year": "2016",
     "Rated": "R",
@@ -397,6 +250,7 @@
     "Response": "True"
   },
   {
+    "id": 11,
     "Title": "Central Intelligence",
     "Year": "2016",
     "Rated": "PG-13",
@@ -437,6 +291,7 @@
     "Response": "True"
   },
   {
+    "id": 12,
     "Title": "Dunkirk",
     "Year": "2017",
     "Rated": "PG-13",
@@ -477,6 +332,7 @@
     "Response": "True"
   },
   {
+    "id": 13,
     "Title": "Gravity",
     "Year": "2013",
     "Rated": "PG-13",
@@ -517,6 +373,7 @@
     "Response": "True"
   },
   {
+    "id": 14,
     "Title": "A Star Is Born",
     "Year": "2018",
     "Rated": "R",
@@ -557,6 +414,7 @@
     "Response": "True"
   },
   {
+    "id": 15,
     "Title": "Roma",
     "Year": "2018",
     "Rated": "R",
@@ -593,6 +451,7 @@
     "Response": "True"
   },
   {
+    "id": 16,
     "Title": "The Hate U Give",
     "Year": "2018",
     "Rated": "PG-13",
@@ -633,6 +492,7 @@
     "Response": "True"
   },
   {
+    "id": 17,
     "Title": "The Gift",
     "Year": "2015",
     "Rated": "R",
@@ -673,6 +533,7 @@
     "Response": "True"
   },
   {
+    "id": 18,
     "Title": "The Shape of Water",
     "Year": "2017",
     "Rated": "R",
@@ -713,6 +574,7 @@
     "Response": "True"
   },
   {
+    "id": 19,
     "Title": "Me Before You",
     "Year": "2016",
     "Rated": "PG-13",
@@ -753,6 +615,7 @@
     "Response": "True"
   },
   {
+    "id": 20,
     "Title": "La La Land",
     "Year": "2016",
     "Rated": "PG-13",
@@ -793,6 +656,7 @@
     "Response": "True"
   },
   {
+    "id": 21,
     "Title": "Moonlight",
     "Year": "2016",
     "Rated": "R",
@@ -833,6 +697,7 @@
     "Response": "True"
   },
   {
+    "id": 22,
     "Title": "Room",
     "Year": "2015",
     "Rated": "R",
@@ -873,6 +738,7 @@
     "Response": "True"
   },
   {
+    "id": 23,
     "Title": "Creed",
     "Year": "2015",
     "Rated": "PG-13",
@@ -913,6 +779,7 @@
     "Response": "True"
   },
   {
+    "id": 24,
     "Title": "The Revenant",
     "Year": "2015",
     "Rated": "R",
@@ -953,6 +820,7 @@
     "Response": "True"
   },
   {
+    "id": 25,
     "Title": "The Martian",
     "Year": "2015",
     "Rated": "PG-13",
@@ -993,6 +861,7 @@
     "Response": "True"
   },
   {
+    "id": 26,
     "Title": "Concussion",
     "Year": "2015",
     "Rated": "PG-13",
@@ -1033,6 +902,7 @@
     "Response": "True"
   },
   {
+    "id": 27,
     "Title": "Halloween",
     "Year": "2018",
     "Rated": "R",
@@ -1069,6 +939,7 @@
     "Response": "True"
   },
   {
+    "id": 28,
     "Title": "The Nun",
     "Year": "2018",
     "Rated": "R",
@@ -1109,6 +980,7 @@
     "Response": "True"
   },
   {
+    "id": 29,
     "Title": "The Conjuring",
     "Year": "2013",
     "Rated": "R",
@@ -1149,6 +1021,7 @@
     "Response": "True"
   },
   {
+    "id": 30,
     "Title": "A Quiet Place",
     "Year": "2018",
     "Rated": "PG-13",
@@ -1189,6 +1062,7 @@
     "Response": "True"
   },
   {
+    "id": 31,
     "Title": "Annabelle",
     "Year": "2014",
     "Rated": "R",
@@ -1229,6 +1103,7 @@
     "Response": "True"
   },
   {
+    "id": 32,
     "Title": "Truth or Dare",
     "Year": "2018",
     "Rated": "PG-13",
@@ -1269,6 +1144,7 @@
     "Response": "True"
   },
   {
+    "id": 33,
     "Title": "Don't Breathe",
     "Year": "2016",
     "Rated": "R",
@@ -1309,6 +1185,7 @@
     "Response": "True"
   },
   {
+    "id": 34,
     "Title": "It",
     "Year": "2017",
     "Rated": "R",
@@ -1349,6 +1226,7 @@
     "Response": "True"
   },
   {
+    "id": 35,
     "Title": "The Purge",
     "Year": "2013",
     "Rated": "R",
@@ -1389,6 +1267,7 @@
     "Response": "True"
   },
   {
+    "id": 36,
     "Title": "Resident Evil: The Final Chapter",
     "Year": "2016",
     "Rated": "R",
@@ -1429,6 +1308,7 @@
     "Response": "True"
   },
   {
+    "id": 37,
     "Title": "Zootopia",
     "Year": "2016",
     "Rated": "PG",
@@ -1469,6 +1349,7 @@
     "Response": "True"
   },
   {
+    "id": 38,
     "Title": "Moana",
     "Year": "2016",
     "Rated": "PG",
@@ -1509,6 +1390,7 @@
     "Response": "True"
   },
   {
+    "id": 39,
     "Title": "Sausage Party",
     "Year": "2016",
     "Rated": "R",
@@ -1549,6 +1431,7 @@
     "Response": "True"
   },
   {
+    "id": 40,
     "Title": "The Incredibles",
     "Year": "2004",
     "Rated": "PG",
@@ -1585,6 +1468,7 @@
     "Response": "True"
   },
   {
+    "id": 41,
     "Title": "Incredibles 2",
     "Year": "2018",
     "Rated": "PG",
@@ -1625,6 +1509,7 @@
     "Response": "True"
   },
   {
+    "id": 42,
     "Title": "Toy Story 4",
     "Year": "2019",
     "Rated": "G",
@@ -1665,6 +1550,7 @@
     "Response": "True"
   },
   {
+    "id": 43,
     "Title": "How to Train Your Dragon: The Hidden World",
     "Year": "2019",
     "Rated": "PG",
@@ -1705,3 +1591,4 @@
     "Response": "True"
   }
 ]
+

@@ -14,4 +14,5 @@ export interface IMovies {
   Country: string;
   Awards: string;
   Poster: string;
+  imdbRating: string;
 }

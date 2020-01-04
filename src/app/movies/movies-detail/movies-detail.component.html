@@ -1,21 +1,45 @@
-<section class="container">
-  <div class="row">
-    <aside>
-      <h1 class="text-danger m-5">{{ movie?.Title }}</h1>
-      <p class="mat-body text-white">{{ movie?.Plot }}</p>
-      <span>{{ movie?.Released }}</span>
-      <span>{{ movie?.Rated }}</span>
-      <span>{{ movie?.Genre }}</span>
-      <span>{{ movie?.Language }}</span>
-    </aside>
-    <aside>
-      <img [src]="movie?.Poster" alt="movie image" />
-    </aside>
-    <div>
-      <button class="btn " (click)="onBack()" style="width: 80px">Back</button>
-      <!-- <fa-icon [icon]="['fas', 'back']'"></fa-icon> -->
+<div class="position-relative mt-3">
+  <section *ngIf="movie" class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <aside class="mr-auto">
+          <h1 class="text-white">{{ movie?.Title }}</h1>
+          <p class="mat-body text-white">{{ movie?.Plot }}</p>
+          <span class="text-white"> <fa-icon
+            [icon]="['fas', 'heart']"
+            [classes]= "['float-left pr-1']"
+            >
+          </fa-icon>{{ movie?.Released }}</span>
+          <div class="w-25"></div>
+          <span class="text-white"> <fa-icon
+            [icon]="['fas', 'heart']"
+            [classes]= "['float-left pr-1']"
+            >
+          </fa-icon> {{ movie?.imdbRating }}</span>
+          <div class="w-25"></div>
+          <span class="text-white"><fa-icon
+            [icon]="['fas', 'heart']"
+            [classes]= "['float-left pr-1']"
+            >
+          </fa-icon> {{ movie?.Genre }}</span>
+          <div class="w-25"></div>
+          <span class="text-white"><fa-icon
+            [icon]="['fas', 'heart']"
+            [classes]= "['float-left pr-1']"
+            >
+          </fa-icon> {{ movie?.Language }}</span>
+        </aside>
+
+      </div>
+      <aside class="ml-3">
+        <img [src]="movie?.Poster" alt="movie image" />
+      </aside>
     </div>
-  </div>
-</section>
+  </section>
+      <section class="container mt-5">
+        <button class="btn btn-primary" (click)="onBack()">Back</button>
+        <!-- <fa-icon [icon]="['fas', 'back']'"></fa-icon> -->
+      </section>
 
 
+</div>

@@ -26,17 +26,20 @@ export class MoviesDetailComponent implements OnInit {
     //     (+this.route.snapshot.params['id']);
 
     // const id = this.moviesService.getMovie
-    // (this.route.snapshot.paramMap['Title'])
+    // (+this.route.snapshot.paramMap['id'])
 
-    this.route.data.subscribe(data => {
+    const id = +this.route.snapshot.paramMap.get('id');
+    this.getMovie(id);
 
-      this.getMovie(data);
-    })
+    // this.route.data.subscribe(data => {
+
+    //   this.getMovie(data);
+    // })
 
   }
 
-  getMovie(title) {
-    this.moviesService.getMovie(title).subscribe({
+  getMovie(id: number) {
+    this.moviesService.getMovie(id).subscribe({
       next: movie => {
         this.movie = movie;
       },

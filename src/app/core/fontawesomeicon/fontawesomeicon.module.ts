@@ -1,6 +1,5 @@
-import { NgModule, Optional, SkipSelf } from "@angular/core";
+import { NgModule } from "@angular/core";
 
-import { EnsureModuleLoadedOnceGuard } from "../ensure-module-loaded-once.guard";
 
 import {
   FontAwesomeModule,

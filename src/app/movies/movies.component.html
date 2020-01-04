@@ -1,5 +1,5 @@
 <section class="container mt-5 ml-5">
-  <form>
+  <form #searchForm=ngForm ngSubmit="performFilter(moviesFilter)">
     <div class="row justify-content-md-start align-items-sm-baseline">
       <div>
         <a class="search-icon-box">
@@ -10,10 +10,14 @@
           >
           </fa-icon>
         </a>
-        <input type="text" class="search-input" placeholder="Search Movies" />
+        <input
+        [(ngModel)]="movieFilter"
+        name="searchForm"
+        type="text"
+        class="search-input" placeholder="Search Movies" />
       </div>
       <div class="ml-3 align-self-center">
-        <button class="w-10 h-100">
+        <button type='submit' class="w-10 h-100">
           <fa-icon
             [icon]="['fas', 'search']"
             [classes]="['search-icon-button ml-1 mr-2']"
@@ -28,20 +32,18 @@
 
 <section class="container mt-5">
   <div class="row justify-content-sm-end">
-    <div *ngFor="let movie of movies" class="col-sm-3 col-6  mb-3">
+    <div *ngFor="let movie of filteredMovies" class="col-sm-3 col-6  mb-3">
       <div class="card hvr-grow-shadow">
         <div class="card-body">
-
-              <favorite-vote ></favorite-vote>
+          <favorite-vote></favorite-vote>
 
           <img [src]="movie.Poster" class="card-img-top" alt="movie-image" />
-
 
           <aside>
             <h3 class="card-title mat-body-strong">{{ movie.Title }}</h3>
             <span class="mat-caption">{{ movie.Released }}</span>
             <div class="d-flex">
-              <a [routerLink]="['/movies',  movie.Title]"
+              <a [routerLink]="['/movies', movie.id]"
                 ><span class="mat-body text-dark">view</span></a
               >
             </div>

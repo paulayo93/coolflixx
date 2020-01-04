@@ -9,7 +9,7 @@ export class MovieRouteActivator implements CanActivate {
               private router: Router) { }
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
-    const movieExists = !!this.moviesService.getById(+route.params['id']);
+    const movieExists = !!this.moviesService.getMovie(+route.params['id']);
 
     if(!movieExists) {
       this.router.navigate([ '/404']);
