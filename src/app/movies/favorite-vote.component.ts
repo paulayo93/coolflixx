@@ -11,15 +11,22 @@ import { FavoriteService } from './favorite.service';
   <fa-icon
               [icon]="['fas', 'heart']"
               [classes]= "['float-right']"
+              [style.color]="iconColor"
+              (click)="onClick()"
               >
             </fa-icon>
   `
 })
 export class FavoriteVoteComponent implements OnInit {
-  @Output() vote = new EventEmitter<IMovies>();
-  movie: IMovies;
 
-  favoriteList: IMovies[] = [];
+  @Input() movie:IMovies;
+  @Input() set voted(value) {
+    this.iconColor = value ? 'red' : 'green';
+  }
+  @Output() vote = new EventEmitter<IMovies>();
+  iconColor: string;
+
+
 
   constructor(library: FaIconLibrary,
               private favoriteService: FavoriteService) {
@@ -27,6 +34,10 @@ export class FavoriteVoteComponent implements OnInit {
   }
 
   ngOnInit() { }
+
+  onClick() {
+    this.vote.emit(this.movie)
+  }
 
   // addVote(title) {
   //   let availableFav = this.favoriteService.getFavorite(title);

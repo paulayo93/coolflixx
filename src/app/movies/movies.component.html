@@ -35,8 +35,8 @@
     <div *ngFor="let movie of filteredMovies" class="col-sm-3 col-6  mb-3">
       <div class="card hvr-grow-shadow">
         <div class="card-body">
-          <favorite-vote></favorite-vote>
-
+          <favorite-vote (vote)="toggleVote(movie)" [voted]="hasVoted(movie)" [movie]="movie"></favorite-vote>
+          <!-- [voted]="hasVoted(movie)" -->
           <img [src]="movie.Poster" class="card-img-top" alt="movie-image" />
 
           <aside>
