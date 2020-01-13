@@ -15,7 +15,7 @@ import { appInit } from "ngx-webstorage";
 })
 export class MoviesService {
   private movieUrl = "movie/movie.json";
-  private moviesUrl = 'api/movies';
+  private moviesUrl = "api/movies";
 
   // private moviesUrl = "https://api.themoviedb.org/3/movie/550?api_key=cbebbf005c0d0e8065f0718936cd1ce6"
   constructor(private http: HttpClient) {}
@@ -27,12 +27,11 @@ export class MoviesService {
     );
   }
 
-
   getMovie(id: number): Observable<IMovies> {
     const url = `${this.moviesUrl}/${id}`;
     return this.http.get<IMovies>(url).pipe(
       tap(data => {
-        console.log('Movie ' + JSON.stringify(data))
+        console.log("Movie " + JSON.stringify(data));
       }),
       catchError(this.handleError)
     );
@@ -49,4 +48,3 @@ export class MoviesService {
     return throwError(errorMessage);
   }
 }
-

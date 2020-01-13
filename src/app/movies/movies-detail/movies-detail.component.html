@@ -5,41 +5,38 @@
         <aside class="mr-auto">
           <h1 class="text-white">{{ movie?.Title }}</h1>
           <p class="mat-body text-white">{{ movie?.Plot }}</p>
-          <span class="text-white"> <fa-icon
-            [icon]="['fas', 'heart']"
-            [classes]= "['float-left pr-1']"
-            >
-          </fa-icon>{{ movie?.Released }}</span>
+          <span class="text-white">
+            <fa-icon [icon]="['fas', 'heart']" [classes]="['float-left pr-1']">
+            </fa-icon
+            >{{ movie?.Released }}</span
+          >
           <div class="w-25"></div>
-          <span class="text-white"> <fa-icon
-            [icon]="['fas', 'heart']"
-            [classes]= "['float-left pr-1']"
-            >
-          </fa-icon> {{ movie?.imdbRating }}</span>
+          <span class="text-white">
+            <fa-icon [icon]="['fas', 'heart']" [classes]="['float-left pr-1']">
+            </fa-icon>
+            {{ movie?.imdbRating }}</span
+          >
           <div class="w-25"></div>
-          <span class="text-white"><fa-icon
-            [icon]="['fas', 'heart']"
-            [classes]= "['float-left pr-1']"
-            >
-          </fa-icon> {{ movie?.Genre }}</span>
+          <span class="text-white"
+            ><fa-icon [icon]="['fas', 'heart']" [classes]="['float-left pr-1']">
+            </fa-icon>
+            {{ movie?.Genre }}</span
+          >
           <div class="w-25"></div>
-          <span class="text-white"><fa-icon
-            [icon]="['fas', 'heart']"
-            [classes]= "['float-left pr-1']"
-            >
-          </fa-icon> {{ movie?.Language }}</span>
+          <span class="text-white"
+            ><fa-icon [icon]="['fas', 'heart']" [classes]="['float-left pr-1']">
+            </fa-icon>
+            {{ movie?.Language }}</span
+          >
         </aside>
-
       </div>
       <aside class="px-5">
         <img class="img-fluid" [src]="movie?.Poster" alt="movie image" />
       </aside>
     </div>
   </section>
-      <section class="container mt-5">
-        <button class="btn btn-primary" (click)="onBack()">Back</button>
-        <!-- <fa-icon [icon]="['fas', 'back']'"></fa-icon> -->
-      </section>
-
-
+  <section class="container mt-5">
+    <button class="btn btn-primary" (click)="onBack()">Back</button>
+    <!-- <fa-icon [icon]="['fas', 'back']'"></fa-icon> -->
+  </section>
 </div>

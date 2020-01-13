@@ -1,5 +1,5 @@
 <section class="container mt-5 ml-5">
-  <form #searchForm=ngForm ngSubmit="performFilter(moviesFilter)">
+  <form #searchForm="ngForm" ngSubmit="performFilter(moviesFilter)">
     <div class="row ">
       <div class="col-4">
         <a class="search-icon-box">
@@ -11,10 +11,12 @@
           </fa-icon>
         </a>
         <input
-        [(ngModel)]="movieFilter"
-        name="searchForm"
-        type="text"
-        class="search-input" placeholder="Search Movies" />
+          [(ngModel)]="movieFilter"
+          name="searchForm"
+          type="text"
+          class="search-input"
+          placeholder="Search Movies"
+        />
       </div>
       <!-- <div class="ml-3 align-self-center">
         <button type='submit' class="w-10 h-100">
@@ -34,17 +36,25 @@
   <div class="row justify-content-sm-end">
     <div *ngFor="let movie of filteredMovies" class="col-sm-3 col-6  mb-3">
       <div class="card hvr-grow-shadow">
-        <div class="card-body">
-          <favorite-vote (vote)="toggleVote(movie)" [voted]="hasVoted(movie)" [movie]="movie"></favorite-vote>
+        <div class="card-body p-0">
+          <favorite-vote
+            (vote)="toggleVote(movie)"
+            [voted]="hasVoted(movie)"
+            [movie]="movie"
+          ></favorite-vote>
           <!-- [voted]="hasVoted(movie)" -->
           <img [src]="movie.Poster" class="card-img-top" alt="movie-image" />
 
-          <aside>
-            <h3 class="card-title mat-body-strong">{{ movie.Title }}</h3>
-            <span class="mat-caption">{{ movie.Released }}</span>
+          <aside class="text-danger p-3 ">
+            <h3 class="card-title mat-body-strong mat-typography-subtitle2">
+              {{ movie.Title }}
+            </h3>
+            <span class="mat-caption mat-body-strong">{{
+              movie.Released
+            }}</span>
             <div class="d-flex">
               <a [routerLink]="['/movies', movie.id]"
-                ><span class="mat-body text-dark">view</span></a
+                ><span class="text-dark">view</span></a
               >
             </div>
           </aside>

@@ -59,10 +59,6 @@ export class MoviesComponent implements OnInit {
     });
   }
 
-  addFavorites(title: string) {
-    this.storage.store("favorite", title);
-  }
-
   toggleVote(movie: IMovies) {
     if (this.hasVoted(movie)) {
       this.favoriteService.deleteFavorite(movie);
