@@ -14,7 +14,6 @@ import { appInit } from "ngx-webstorage";
   providedIn: "root"
 })
 export class MoviesService {
-  private movieUrl = "movie/movie.json";
   private moviesUrl = "api/movies";
 
   // private moviesUrl = "https://api.themoviedb.org/3/movie/550?api_key=cbebbf005c0d0e8065f0718936cd1ce6"

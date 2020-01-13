@@ -20,7 +20,7 @@ import {
   MoviesComponent,
   MoviesDetailComponent,
 } from './movies/index'
-import { MovieData } from 'src/movie/movies-data';
+import { MovieData } from 'src/movie/movie-data';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FontAwesomeIconModule } from './core/fontawesomeicon/fontawesomeicon.module';
 
