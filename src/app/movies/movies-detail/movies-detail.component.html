@@ -1,10 +1,10 @@
 <div class="position-relative mt-3">
   <section *ngIf="movie" class="container">
-    <div class="row">
-      <div class="col-md-5 align-items-center">
-        <aside class="mr-auto">
-          <h1 class="text-white">{{ movie?.Title }}</h1>
-          <p class="mat-body text-white">{{ movie?.Plot }}</p>
+    <div class="row justify-content-center">
+        <aside class="col-sm w-50 align-self-start order-sm-2">
+          <h1 class="text-white mat-card-title font-weight-bold h4">{{ movie?.Title }}</h1>
+
+          <p class="text-white mat-text-column">{{ movie?.Plot }}</p>
           <span class="text-white">
             <fa-icon [icon]="['fas', 'heart']" [classes]="['float-left pr-1']">
             </fa-icon
@@ -29,13 +29,15 @@
             {{ movie?.Language }}</span
           >
         </aside>
-      </div>
-      <aside class="px-5">
+
+
+      <aside class="col-sm align-self-sm-end w-50 order-2">
         <img class="img-fluid" [src]="movie?.Poster" alt="movie image" />
       </aside>
+
     </div>
   </section>
-  <section class="container mt-5">
+  <section class="container mt-3 mb-5">
     <button class="btn btn-primary" (click)="onBack()">Back</button>
     <!-- <fa-icon [icon]="['fas', 'back']'"></fa-icon> -->
   </section>

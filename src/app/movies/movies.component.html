@@ -46,15 +46,15 @@
           <img [src]="movie.Poster" class="card-img-top" alt="movie-image" />
 
           <aside class="text-danger p-3 ">
-            <h3 class="card-title mat-body-strong mat-typography-subtitle2">
+            <h3 class="card-title mb-0 h6">
               {{ movie.Title }}
             </h3>
-            <span class="mat-caption mat-body-strong">{{
+            <span class="mat-caption mat-body-strong text-muted font-weight-bold">{{
               movie.Released
             }}</span>
-            <div class="d-flex">
+            <div class="d-flex mt-2">
               <a [routerLink]="['/movies', movie.id]"
-                ><span class="text-dark">view</span></a
+                ><span class="text-dark font-weight-normal">view</span></a
               >
             </div>
           </aside>
