@@ -35,8 +35,8 @@ import { PaginationComponent } from './movies/pagination.component';
      MoviesDetailComponent,
      MoviesComponent,
      FavoriteVoteComponent,
-     PaginationComponent
-    //  Error404Component
+     PaginationComponent,
+     Error404Component
     ],
   imports: [
     BrowserModule,
