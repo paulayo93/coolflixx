@@ -15,6 +15,7 @@ import { FavoriteService } from "./favorite.service";
   styleUrls: ["./movies.component.scss"]
 })
 export class MoviesComponent implements OnInit {  
+    pageEvent: PageEvent;
     pageIndex:number = 0;
     pageSize:number = 5;
     lowValue:number = 0;
