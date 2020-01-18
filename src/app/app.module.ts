@@ -23,6 +23,9 @@ import {
 import { MovieData } from 'src/movie/movie-data';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FontAwesomeIconModule } from './core/fontawesomeicon/fontawesomeicon.module';
+import { MaterialModule } from './core/material/material.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PaginationComponent } from './movies/pagination.component';
 
 
 
@@ -31,7 +34,8 @@ import { FontAwesomeIconModule } from './core/fontawesomeicon/fontawesomeicon.mo
      NavbarComponent,
      MoviesDetailComponent,
      MoviesComponent,
-     FavoriteVoteComponent
+     FavoriteVoteComponent,
+     PaginationComponent
     //  Error404Component
     ],
   imports: [
@@ -47,9 +51,12 @@ import { FontAwesomeIconModule } from './core/fontawesomeicon/fontawesomeicon.mo
     NgxWebstorageModule.forRoot(),
     AppRoutingModule,
     FontAwesomeModule,
-    FontAwesomeIconModule
+    FontAwesomeIconModule,
+    MaterialModule,
+    NgbModule
 
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })

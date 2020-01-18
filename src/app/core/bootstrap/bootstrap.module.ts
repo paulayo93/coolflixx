@@ -1,19 +1,18 @@
-import { NgModule, Optional, SkipSelf } from "@angular/core";
+import { NgModule, Optional, SkipSelf} from "@angular/core";
 import { CommonModule } from "@angular/common";
 
-import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+import { NgbModule} from "@ng-bootstrap/ng-bootstrap";
+import { EnsureModuleLoadedOnceGuard } from '../ensure-module-loaded-once.guard';
 
 
 @NgModule({
-  declarations: [],
-  imports: [NgbModule, CommonModule],
+  declarations: [ ],
+  imports: [CommonModule, NgbModule],
   exports: [NgbModule]
 })
-export class BootstrapModule {
-  // Ensure that CoreModule is only loaded into AppModule
+export class BootstrapModule  extends EnsureModuleLoadedOnceGuard{
 
-  // Looks for the module in the parent injector to see if it's already been loaded (only want it loaded once)
-  constructor() {
-
+  constructor(@Optional() @SkipSelf() parentModule: BootstrapModule) {
+    super(parentModule);
   }
 }

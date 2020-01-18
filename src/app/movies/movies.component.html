@@ -34,7 +34,9 @@
 
 <section class="container mt-5">
   <div class="row">
-    <div *ngFor="let movie of filteredMovies" class="col-sm-3 col-6  mb-3">
+    <div 
+    *ngFor="let movie of filteredMovies | slice: lowValue: highValue" 
+    class="col-sm-3 col-6  mb-3">
       <div class="card hvr-grow-shadow">
         <div class="card-body p-0">
           <favorite-vote
@@ -63,4 +65,10 @@
     </div>
   </div>
 </section>
+<mat-paginator
+    [length]="filteredMovies.length"
+              [pageSize]="pageSize"
+              (page)="pageEvent = getPaginatorData($event)"
+></mat-paginator>
+<!-- <app-pagination></app-pagination> -->
 <!-- <router-outlet></router-outlet> -->

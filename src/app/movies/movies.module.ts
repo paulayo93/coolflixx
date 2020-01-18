@@ -4,11 +4,10 @@ import { CommonModule } from "@angular/common";
 import { MoviesDetailComponent } from "./movies-detail/movies-detail.component";
 import { FavoriteVoteComponent } from './favorite-vote.component'
 import { MoviesComponent } from './movies.component';
+import { PaginationComponent } from './pagination.component';
 
 @NgModule({
-  declarations: [
-
-  ],
-  imports: [CommonModule]
+  declarations: [],
+  imports: [CommonModule],
 })
 export class MoviesModule {}
