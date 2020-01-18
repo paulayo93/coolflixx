@@ -90,7 +90,7 @@ export class MoviesComponent implements OnInit {
        this.highValue =  this.highValue - this.pageSize;
       }   
        this.pageIndex = event.pageIndex;
-       
-       return this.pageIndex;
+
+       return event;
  }
 }
