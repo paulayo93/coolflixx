@@ -79,7 +79,7 @@ export class MoviesComponent implements OnInit {
     return this.favoriteService.hasVoted(movie);
   }
 
-   getPaginatorData(event){
+   getPaginatorData(event?: pageEvent){
      console.log(event);
      if(event.pageIndex === this.pageIndex + 1){
         this.lowValue = this.lowValue + this.pageSize;
